@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <script>
+        function changeBG(color){
+            document.getElementById("Space").style.backgroundColor=color;
+        }
+        function changeColor(color){
+            document.getElementById("Space").style.color=color;
+        }
+        function changeFont(font){
+            document.getElementById("Space").style.fontFamily=font;
+        }
+    </script>
+      <center>
+        <h2>CraftSpace</h2>
+    <div id="Space" contenteditable="true"></div>
+    <br>
+     <div class="Parent">
+        <div class="Child">
+            <h2 >Background Color</h2>
+            <button class="rang" onclick="changeBG('red')"  style="background-color: red;"></button>
+            <button class="rang" onclick="changeBG('green')" style="background-color: green;"></button>
+            <button class="rang" onclick="changeBG('blue')"  style="background-color: blue;"></button>
+        </div>
+
+        <div  class="Child">
+            <h2>Text Color</h2>
+            <button class = "rang" onclick="changeColor('yellow')"  style="background-color: yellow;"></button>
+            <button class="rang" onclick="changeColor('Orange')"  style="background-color: orange;"></button>
+            <button class="rang" onclick="changeColor('white')"  style="background-color: white;"></button>
+           
+        </div>
+
+         <div  class="Child">
+            <h2>Text Look</h2>
+            <button class = "rang" onclick="changeFont('Impact')"  style="font-family: Impact">Style</button>
+            <button class="rang" onclick="changeFont('Cambria')"  style="font-family: Cambira;">Style</button>
+            <button class="rang" onclick="changeFont('Verdana')"  style="font-family: Verdana;">Style</button>
+           
+        </div>
+    </div>
+     </center>
+</body>
+</html>
